@@ -1,0 +1,12 @@
+<div class="text-center">
+  <h1>Know About Weather</h1>
+  <%#= form_tag("/weather_engine/weather", method: "post") do %>
+    <%= form_for("/weather_app/weathers", method: "post") do %>
+    <%= label_tag :enter_the_location %><br>
+    <%= text_field_tag :location %>
+    <br><br>
+    <p>
+      <%= submit_tag("Submit") %>
+    </p>
+  <% end %>
+</div>
